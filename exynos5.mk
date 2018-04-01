@@ -48,11 +48,7 @@ PRODUCT_PACKAGES += \
 # hw composer HAL
 PRODUCT_PACKAGES += \
 	hwcomposer.exynos5
-ifeq ($(TARGET_SEC_FP_HAL_VARIANT), bauth)
-# MobiCore
-PRODUCT_PACKAGES += \
-	mcDriverDaemon
-endif
+	
 # Memory Tracker HAL
 PRODUCT_PACKAGES += \
 	memtrack.exynos5
