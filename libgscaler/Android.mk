@@ -43,12 +43,13 @@ LOCAL_C_INCLUDES := \
 	$(TOP)/hardware/samsung_slsi-cm/exynos/libexynosutils \
 	$(TOP)/hardware/samsung_slsi-cm/exynos/libmpp
 
-LOCAL_ADDITIONAL_DEPENDENCIES := \
-	INSTALLED_KERNEL_HEADERS
-
 LOCAL_SRC_FILES := \
 	libgscaler_obj.cpp \
 	libgscaler.cpp
+
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+LOCAL_CFLAGS += -Wno-format
 
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libexynosgscaler
