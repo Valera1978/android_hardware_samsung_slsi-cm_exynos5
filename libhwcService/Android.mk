@@ -84,7 +84,6 @@ LOCAL_CFLAGS += -Wno-unused-parameter
 LOCAL_CFLAGS += -Wno-reorder
 
 LOCAL_MODULE := libExynosHWCService
-LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
 
 endif
